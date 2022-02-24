@@ -8,7 +8,7 @@ const handleMouseLeave = (evt) => {
   evt.target.classList.remove("highlight");
 };
 
-paragraphs.forEach((p) => {
+for (const p of paragraphs) {
   p.addEventListener("mouseenter", handleMouseEnter);
   p.addEventListener("mouseleave", handleMouseLeave);
-});
+}
